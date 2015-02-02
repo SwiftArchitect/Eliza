@@ -78,10 +78,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TGPEliza", "TGPControls/**/*.{h,m}"
-  # s.exclude_files = "TGPControls/**/*.{h,m}"
+  s.source_files  = "TGPEliza", "TGPEliza/**/*.{h,m}"
+  # s.exclude_files = "TGPEliza/**/*.{h,m}"
 
-  s.public_header_files = "TGPControls/**/*.h"
+  s.public_header_files = "TGPEliza/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
