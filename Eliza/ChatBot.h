@@ -1,14 +1,7 @@
-//    @file:    TGPEliza.h
-//    @project: TGPEliza
+//    @file:    ChatBot.h
+//    @project: Eliza
 //
-//    @history: Created December 25, 2014 (Christmas Day)
-//    @author:  Xavier Schott
-//              mailto://xschott@gmail.com
-//              http://thegothicparty.com
-//              tel://+18089383634
-//
-//    @license: http://opensource.org/licenses/MIT
-//    Copyright (c) 2014, Xavier Schott
+//    Copyright © 2014, 2018 Xavier Schott
 //
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the "Software"), to deal
@@ -30,10 +23,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TGPEliza : NSObject
+@interface ChatBot : NSObject
 
-- (void)read_script:(NSString *)filePath;
-- (NSString *)greet_eliza;
-- (NSString *)chat_with_eliza:(NSString *)message;
+- (NSString *)talk:(NSString *)text;
 
 @end

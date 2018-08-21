@@ -1,14 +1,7 @@
-//    @file:    TGPEliza.m
-//    @project: TGPEliza
+//    @file:    Eliza.m
+//    @project: Eliza
 //
-//    @history: Created December 25, 2014 (Christmas Day)
-//    @author:  Xavier Schott
-//              mailto://xschott@gmail.com
-//              http://thegothicparty.com
-//              tel://+18089383634
-//
-//    @license: http://opensource.org/licenses/MIT
-//    Copyright (c) 2014, Xavier Schott
+//    Copyright © 2014, 2018 Xavier Schott
 //
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +21,7 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //    THE SOFTWARE.
 
-#import "TGPEliza.h"
+#import "Eliza.h"
 
 
 //    keyrec = record
@@ -104,7 +97,7 @@ const NSInteger max_trans = 1024;   // number of words to transpose
 const NSInteger max_reply = 1020;   // the maximum number of replies for each set of responses
 const NSInteger max_key = 1100;    // maximum number of key words
 
-@interface TGPEliza ()
+@interface Eliza ()
 @property (nonatomic, assign) BOOL case_switch; // tells the input routine on the bbs to
 // convert lower case to upper.  serves
 // no purpose here, though
@@ -142,7 +135,7 @@ const NSInteger max_key = 1100;    // maximum number of key words
 @end
 
 
-@implementation TGPEliza
+@implementation Eliza
 
 #pragma mark -- NSObject
 
@@ -315,7 +308,7 @@ const NSInteger max_key = 1100;    // maximum number of key words
     self.line_no = 0;
     self.rec_type = RECTYPEUNKNOWN;
 
-    NSError * ioresult = noErr;
+    NSError * ioresult;
     NSString *fileContents = [NSString stringWithContentsOfFile:filePath
                                                        encoding:NSUTF8StringEncoding
                                                           error:&ioresult];

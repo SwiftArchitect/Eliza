@@ -1,14 +1,7 @@
-//    @file:    TGPChatBot.m
-//    @project: TGPEliza
+//    @file:    ChatBot.m
+//    @project: Eliza
 //
-//    @history: Created December 25, 2014 (Christmas Day)
-//    @author:  Xavier Schott
-//              mailto://xschott@gmail.com
-//              http://thegothicparty.com
-//              tel://+18089383634
-//
-//    @license: http://opensource.org/licenses/MIT
-//    Copyright (c) 2014, Xavier Schott
+//    Copyright © 2014, 2018 Xavier Schott
 //
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the "Software"), to deal
@@ -28,18 +21,18 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //    THE SOFTWARE.
 
-#import "TGPChatBot.h"
-#import "TGPEliza.h"
+#import "ChatBot.h"
+#import "Eliza.h"
 
-@interface TGPChatBot ()
-@property (nonatomic, strong) TGPEliza * elisa;
+@interface ChatBot ()
+@property (nonatomic, strong) Eliza * elisa;
 @property (nonatomic, assign) BOOL conversationStarted;
 
 @property (nonatomic, strong) NSString * greeting;
 
 @end
 
-@implementation TGPChatBot
+@implementation ChatBot
 
 - (instancetype)init
 {
@@ -48,7 +41,7 @@
                                                          ofType:@"txt"];
         NSAssert(nil != path, @"path?");
 
-        self.elisa = [[TGPEliza alloc] init];
+        self.elisa = [[Eliza alloc] init];
         [self.elisa read_script:path];
     }
     return self;

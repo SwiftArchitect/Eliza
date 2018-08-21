@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode9.3
+
+script: xcodebuild clean && xcodebuild build -project Eliza.xcodeproj -scheme Eliza CODE_SIGNING_REQUIRED=NO
+
