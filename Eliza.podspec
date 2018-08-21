@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.name         = "ELIZA"
+  spec.name         = "Eliza"
   spec.version      = "1.0.0"
   spec.summary      = "Eliza, the 1966 Chat robot written at MIT by Joseph Weizenbaum"
   spec.description  = <<-DESC

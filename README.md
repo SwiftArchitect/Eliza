@@ -1,4 +1,4 @@
-# Eliza
+# ELIZA
 
 [![Build Status](https://travis-ci.org/SwiftArchitect/Eliza.svg?branch=master)](https://travis-ci.org/SwiftArchitect/Eliza)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Eliza.svg)](https://cocoapods.org/pods/Eliza)
